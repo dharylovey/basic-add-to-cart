@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add to Cart</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	
+	<h1>Dharyl's Cellphone Shop</h1>
+	<div id="cart">
+		<div class="cart-basket">
+			<img src="images/cart.png" height="50" width="50" id="basketImage" onclick="clickCart()">
+			<h2 id="itemCounter">0</h2>
+			
+		</div>
+	</div>
+	<div id="container">
+		
+		<div class="product">
+			<img src="images/redmi-note-10-5g.jpg" height="150" width="150">
+			<div id="description">
+				<h3 >Redmi Note 10 5g</h3>
+				<p>The Redmi Note 10 5G is designed to provide fast and reliable 5G connectivity, ensuring you can stay connected at high speeds, stream content, and enjoy online gaming without any lag. This smartphone combines impressive performance, a stunning display, and a versatile camera system, making it a great choice for users who demand both power and affordability.</p>
+				<p class="price"></p>
+				<button onclick="addToCart(mi)">Add To Cart</button>
+			</div>
+				
+		</div>
+
+		<div class="product">
+			<img src="images/infinix-hot-30-5g.jpg" height="150" width="150">
+			<div id="description">
+				<h3>Infinix Hot 30 5g</h3>
+				<p>Infinix Hot 30 5G Cheapest Price and Key Features
+				The cheapest price of Infinix Hot 30 5G in Philippines is PHP 3199. The Infinix Hot 30 5G features a 6.78" display, 50 + 0.08MP back camera, 8MP front camera, and a 5000mAh battery capacity. It is powered by the Octa Core CPU and runs on Android.</p>
+				<p class="price"></p>
+				<button onclick="addToCart(infinix)">Add To Cart</button>	
+			</div>
+			
+		</div>
+
+		<div class="product">
+			<img src="images/realme-c55.jpg" height="150" width="150">
+			<div id="description">
+				<h3>Realme C55</h3>
+				<p>The Helio G88's 12nm octa-core CPU brings reliable power efficiency to all areas of the realme C55, for smooth that lasts. One swipe and you're there. A large display combines with an ultra-fast 90Hz refresh rate, for a viewing experience unrivaled in the segment. 33W SUPERVOOC charge.</p>
+				<p class="price"></p>
+				<button onclick="addToCart(realme)">Add To Cart</button>	
+			</div>
+			
+		</div>
+	</div>
+
+	<hr>
+	
+	<div id="cart-container">
+		<h1>Cart</h1>
+		
+		<div class="cartTotal">
+			<span>Product</span>
+			<span>Price</span>
+		</div>
+		<hr>
+		<div id="productList">
+			<span></span>
+			<span></span>
+		</div>
+		<hr>
+		<div class="Total">
+			<span>Items</span>
+			<span>Total</span>
+		</div>
+		<div id="itemTotalOrder">
+			<span id="quantity"></span>
+			<span id="orderTotal"></span>
+		</div>
+		<div id="emptyCheck">
+			<button id="emptyCart">Empty Cart</button>
+			<button id="checkOut">Check-Out</button>
+		</div>
+		
+	</div>
+
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
